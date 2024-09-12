@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Porfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!---box icons link--->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!---remix icons link--->
+     <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicons.css"rel="stylesheet">
+
+    <!---google fonts link--->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+
+<body>
+     
+    <!--header-->
+       
+    <header>
+        <a href="#" class="logo"> Developer <span> X</span></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+         
+        <div class="navlist">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#Experience">Experience</a>
+            <a href="#portfolio">portfolio</a>
+            <a href="#contact">contact</a>
+        </div>
+
+        <div class="top-btnn">
+            <a href="#" class="h-btn"> Contact Me</a>
+        </div>
+    </header>
+
+    <!---About Me-->
+    <section class="hero" id="home">
+        <div class="main-content" data-aos="fade-in">
+            <h3>Hi,There!</h3>
+            <h1> I'm  <span>Ashkar</span> </h1>
+            <p>I am a passionate and dedicated web developer currently in my final year of pursuing a Bachelor of Computer Applications (BCA). With a strong foundation in computer science and hands-on experience in web development, I am committed to creating innovative and user-friendly digital solutions. My academic journey has equipped me with essential technical skills and problem-solving abilities, and I am eager to leverage these skills in real-world projects and internships.</p>
+             
+            <div class="social">
+                <a href="https://www.facebook.com/profile.php?id=100080411485460"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAgZJREFUSEulVut5wyAMPG2SbpJskkzSdpJ0k3qTeBMaMA8JJIS/+k8bbDhOujsgxIcAhPRffZQh+cE/f8X1bTAL3dnV9HV6SYmrytgilOe1CnGU5TIV4AElr7DcArrmneyZx951rkMwgad8S4Wu76J9Aoh/ecN2IHx4EqBGStJz+nRBwMtYPLKuwENrcm+FuKyKK+MvBFwMYTJge/uM8bKdIuBLKpI2QthYX79NbzL5OIhRCIHbPPb0l01KDHVxKyIVwMs2SHB3AE/GeAPoZvmr23SdNgZINXhhOezqDsKTlaABr3haBEiu22JQZca12BuAm55/9oqHuIZWDFuP1rnEOg2lG6PvB8Cj5L8OLQJk2ugMnFs018TXO4Szqid2cjKqBHkFnhwp5dUBbKdurZGdbq0PtdS6eoWrY79j36ePGZkWMwLuIdmJiyvbSc9H87yvmk7CsUrU2qWomm5NdGveYD5WJgxDacCxE/cmd4F0xEKppZJbqeuuOh9bCSxZiENimrfNrycCRNHXeEjYgd5Nr1md+5oY67qSa/bEPOX3l9C1HisxfBJ4iMkKnBdqjD3vslv0oWonZTpPn2DcCWoAnmdMf9uXjAkbAvexE4SsBW6Puw/i1afdtwg7AtK11gnJg0Cprp9yusk8mAPAnst6PD/CzAv6SkIq7IS4zrWaf72CLqP0D3ug5ydw4zghAAAAAElFTkSuQmCC"/></i></a>
+                <a href="https://www.instagram.com/ash___hhhh/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAwxJREFUSEudV1ty2zAMXJykykkiHySN3YvEPomdXkRqf/vbf6snYbUkKIIv2RPOJKORSAALLBa0gEsAOP/UXA8+9w/uGKbNh6vtWN9+MWjZNaohPUb8XBAW4VOItRwDHAZbGu+ujmpOrxohmxgbNd4OfAAY/d8u7OzjoshuK3suPdYYxNlhOrsCRCgQuEW5tzyR9lHgIlcZxAHAUqLLUm1SdAcc0zozagHmOqU2hCycUI4QOAEsELyUXRMc5zaucHIEHJ0yWrN6JPJZibbf1OJvOl+DHh1wA+Rk9qDF6ntIMV5Cip7p7i2gNzj81BMnQBbATWqH9rbVSrXTFGzfiqQOTvAOh1EA1p7Bfarx7/pMBz8A0CmBcE/uuGgJIuVGtsQhipnZ87E+nxsiR8ORxUdN9V8Af7w9AVuRZWP5tupa+KzHBMgMOK1v1lpnDeIMh3968HVFRGdc57yF/G6iJsmecewjOxjSxUzQeGZAHdJwrOXJd0EqpzqWg8Bt70tWUyimtX6G0T5qCgnRMJ2nDt3YPkReoPYB1YhtjZX63Fi2UjRKNLdOT0fU2VkBJtd1nAo+OkXsyZXonEfdlq8jBNdVz8usbGdtCbJ20pS0EH8x1V5YJicY4eSgolSy2m9SVlc1tuRijYnKrphmdlJGIiXdPqt1CrXIRSckDmvNRce/NOPfSCjTZmYieTB35/tYEWdjMdV4cCogtU57GX1X1m7pCjzw/87rILtswyDxIApIJsFBq1MUlMM7XC1xJq8DQs1ezQT79PLZJp0VQCtWaTrpOSoXZyolc27N0UxKO02tr48CXFXPG1qdEsenyGDtx3xE+NHWRtYIQSYlrG+xIrvVftaSLbVdBKy45zHGs8X84iUi9HScYBlansok0xwfVHHibSLOZXP1acAOr9g6cbJyHp9WTswk3T7iZC+y2Fz2+jkuvuiYlIv9pZA5rky1gbDNIvp9OoWRmsNrVb+qTurpvV81yVSZv52fQpYf5s5lL2zZ5S04sQ4sgl7kvby0lKtibM9ZZbRX+z4n/gM1x1MvvpOdCwAAAABJRU5ErkJggg=="/></a>
+                <a href="https://www.linkedin.com/in/ashkar-s-5b3b45293/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAq5JREFUSEuVlj+uEzEQxn8+ACUNVWg5A0jsNZCQXkQBR6BLcgs6UiBRcgLE6tHTUiaHoDc7tnd3ZmxvXlyt1p5/33zz2YG7VgBisdDf1knaaRzV/+X7rlU53bQu0YtRIJq0G6a2mqcE651ZPdU+obZ6CPA8wk/gT5VZH+V0VAdbq7TY11AHfhN5rYK9B76Z5DYD+wAWXs0QTZaPwBeX9V+Ir2pUnlx2kwXBmR+mU0cNFvAPeJatA5ogt3m1zXxd8Rvg0Tn8DrybA6/j1BihatA0q+vzPvFPED5DfAH8AD6kqjdH2AZo13mLXI6XW3B6QZiJs7roZ5tZ3dtvpH6DUjtgF+Aa4dpPWrhilxj+cv/OAU6lGiHfw7xfKh6IiN1XCepsxwD7VhKe1WJ4caw+A/uCSmG9cX/Mk9BdI4E9USPQrvjiK06Bc08OE6tLkD5jGymIzUm3VUGdHO0IXBYlzyfPEEtgcsX93ktfPdziZAQGK6V1j9eK88kMdV6dwGGAKM7Tmcns2Lg8X078WAjXItcG1CWwTVaU7uSERQj61g1ML3CBOpFLrwbU9oCgIaiUlfwIwxf2l42hQL60WrsprDaeFasLuSyvjEPTEqvtNrBTn10sFSv+mHHS/dOVVJdN4GhJmsg1zk8i0+MANwMnVuu5gLWSNbq95XJ1QyCOvfvYCkg2yOOUnbZYnQJr5Bb227nLCao2NXpsmiiSKbJXjcoKdRgdqw9TgArqmlxrnD7UvcAB0ep5huciGlCrlpR7SUvzolwKOiUgWjIXM8fqZNnSdAX13VptVamaz4pc5rrpzfHynkqKo5bI3LWQIt23jtVj4y2mzi2eMgFnmdHCnX47elpBcin5zcblYSdvtfdabV2VJKqXpVWujSfMdh29Mux/g1PGrPHLJaFdWDj+A/dFKjSenda7AAAAAElFTkSuQmCC"/></a>
+                <a href="https://github.com/ashkarev"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAArJJREFUSEutV4mR4jAQbEVyJhOI5CASIBJDJOuLBDLRuaWRNaPPy9aqamvBsubrnh7h8EvLAfDaVu+BPOe/3VXZ2D0BQB9SzlJwyrGDg7dRVw6ChSOASbb+APgnn98A+Dden2Qsjq4AlNNGHRwWeFwc8PY7ZeqWWp2b10zOpnT7WD7gcId37wL57eQIY5aTTo8hiCF7GiDGsp965TcYq+jo9FWD9SOaHeDw3sjTxThufAU84+dFMj7ycHbdJWMiGfnAJZnbsrdKTRLdVG6XlVwPIRb3WI2FFuUdfk/PnoBbhPkMPq3b+vo9fJEsynaafCixacLTamj5kFwTHF62QjhovF2BWsi2wJYE6TtudK0DJh8cG+us2qWRcbDg04YQjfgcNK6j9jCSGckZhSYb2LLWGLeYnLEZ6lGT7dfV460INFaPsagjZKEmBPe3F43fRmMbVsSB0bLHUj8S9olpZ8BTMPQyhCiT7kGg2F5qgXSIMxmfRam0/Zzxp9rhMMFbEVpN3FYpCG2lMW6XBngM1bKHvcN1LWnskGygwDhvFMQMRGB5ZNw10m6AK4+i+tm1JVoqV26BluoMmW0y4zSbbR8HyaRuB+ZFxzlqLSDMMg18Nv8d0HqrtdqkPQNexqi8E7dNa5aSyWBS1qnEc1CimC1L/4wtYZyxI5KOd9SVnZsvPmWpaTw0vlyDDoD7GzLI2aehEUOJ/jtjdMMmZKvbLwpITZCUNTMkE/U9i2WvlgNePraQDoifg+xaRG07lcaSc47Ip9+/yMn7hvmb05b41ITPTcUROeWBEch1KgZJOl92ROVUV9ewuiNOxDcRp84gH9KOG8PFWi/n8ahTZ2ESydVaFAxyIt40Kqht+5l2+s6srchYObAPehL/jYyLEqnfSO0geq6Ki2JDatuF7NsbwdPd+w9Fpgw1AcasoQAAAABJRU5ErkJggg=="/></a>
+            </div>
+
+
+            <div class="main-btn">
+             <a href="#contact"class="btn"> Hire me</a>
+             <a href="https://drive.google.com/file/d/1zksd6eskumRMG_keQ3Oxvg0jyqBB6z_Z/view?usp=sharing" class="btn btn2">Download CV</a>
+            </div>
+            
+        </div>
+    </section>
+
+    <!--about Section-->
+
+    <section class="about" id="about">
+        <div class="about-img " data-aos="zoom-in-down">
+            <img src="images/IMG_20240703_013801_928.png">
+        </div>
+
+        <div class="about-text" data-aos="zoom-in-up">
+            <h2> Iam Web <span> Designer </span><br> & Web Developer
+            </h2>
+            
+            <div class="exp-area">
+                <p class="exp">
+                    Experience:
+                    <span> 3 Years</span>
+                </p>
+                <p class="exp">
+                    Speciality:
+                    <span>Web Developer,web Designer</span>
+                </p>
+                <p class="exp">
+                    Address:
+                    <span> Kollam,Kerala</span>
+                </p>
+                <p class="exp">
+                    Email:
+                    <span> ashkars178@gmail.com</span>
+                </p>
+                <p class="exp">
+                    Phone:
+                    <span> 85471*****</span>
+                </p>
+                <p class="exp">
+                    Freelance:
+                    <span> Available</span>
+                </p>
+            </div>
+            <a href="#" class="btn"> View All Projects</a>
+        </div>
+    </section>
+
+    <!--Experience section-->
+
+    <section class="Experience" id="Experience">
+        <div class="center-text"  data-aos="fade-down">
+            <h2>My <span>Experience</span></h2>
+        </div>
+
+
+        <div class="services-content"  data-aos="zoom-in-down">
+            <div class="box">
+                <img src="images/lyfaux.png" alt=""> 
+                <h3> Lyfaux cyber security</h3>
+                <p> its an wonderful oppertunity to atending.....</p>
+             <a href="https://drive.google.com/file/d/1Lh3Ct5R0Nq6HclQgEUla5vNPQwB0yrJ1/view?usp=sharing">
+                View the certificate
+                <i class='bx bx-right-arrow-alt' ></i>
+             </a>    
+         </div>
+          
+         
+        <div class="services-content">
+            <div class="box">
+                <img scr="lyfaux image veknm">
+                <h3> website project</h3>
+                <p>  Its an website I create using html and css</p>
+             <a href="#">
+                Download Now
+                <i class='bx bx-right-arrow-alt' ></i>
+             </a>    
+         </div>
+
+         <!--
+        <div class="services-content">
+            <div class="box">
+                <img scr="lyfaux image veknm">
+                <h3> Lyfaux cyber security</h3>
+                <p> its an wonderful oppertunity to atending.....</p>
+             <a href="#">
+                Download Now
+                <i class='bx bx-right-arrow-alt' ></i>
+             </a>    
+         </div>
+        -->
+         </div>
+         </section>
+
+
+
+         <!--portfolio sectionn -->
+         <section class="portfolio" id="portfolio">
+            <div class="center-text" data-aos="fade-down">
+                <h2>My <span>Portfolio</span></h2>
+            </div>
+     
+            <div class="portfolio-content" data-aos="zoom-in-up">
+                <div class="row">
+                    <img src="images/pexels-danny-meneses-943096.jpg">
+                    <div class="main-row">   
+                       <div class="row-text">
+                        <h5> Website design</h5>
+                    </div>
+                    <div class="row-icon">
+                        <i class='bx bxl-github'></i>
+                    </div>
+                </div>
+                <h4> Website development for Dark X</h4>
+            </div>
+
+            <div class="row">
+                <img src="images/coding-16.jpg">
+                <div class="main-row">   
+                   <div class="row-text">
+                    <h5> Website design</h5>
+                </div>
+                <div class="row-icon">
+                    <i class='bx bxl-github'></i>
+                </div>
+            </div>
+            <h4> Website development for Dark X</h4>
+        </div>
+<!--
+        <div class="row">
+            <img src="images/IMG_20240703_013801_928.png">
+            <div class="main-row">   
+               <div class="row-text">
+                <h5> Website design</h5>
+            </div>
+            <div class="row-icon">
+                <i class='bx bxl-github'></i>
+            </div>
+        </div>
+        <h4> Website development for Dark X</h4>
+    </div>
+
+    <div class="row">
+        <img src="images/IMG_20240703_013801_928.png">
+        <div class="main-row">   
+           <div class="row-text">
+            <h5> Website design</h5>
+        </div>
+        <div class="row-icon">
+            <i class='bx bxl-github'></i>
+        </div>
+    </div>
+    <h4> Website development for Dark X</h4>
+   </div>
+-->
+</section>
+
+
+<!--contact section-->
+<section class="contact" id="contact">
+    <div class="center-text" data-aos="fade-down">
+        <h2>Contact <span>Me</span></h2>
+    </div>
+    <div class="contact-form" data-aos="zoom-in-up">
+        <form action="">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email"placeholder="Email Address" required>
+            <textarea name="" id="" cols="30" rows="10"placeholder="Write message here..." required></textarea>
+            <input type="submit"name="" value=" Send Message" class="send-btn">    
+        </form>
+
+    </div>
+</section>
+
+
+ <div class="footer">
+    <div class="copyright">
+        <p> 2024 Ashkar, All Rights are Reserved.</p>
+    </div>
+    
+    <a href="#home" class="scroll-top">
+        <i class='bx bxs-up-arrow'></i>
+    </a>
+ </div>
+
+    <!--- js link--->
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 300,
+        duration:1400,
+      });
+    </script>
+</body> 
+</html>
